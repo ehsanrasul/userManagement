@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20i-1812</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Hi Ehsan !</h2>
+        <div style="display: flex;"> 
+            <p>This is a single Page web App containing Basic CRUD Operations with ajax on Fake Api data e.g. JsonPlaceHolder.</p>  
+            <button id="addData" class="btn btn-danger btn-sm-8" style="margin-left: 30%;  height:20%;">Add Data</button>
+        </div>
+        <br/>
+
+        <table id="Records" class="table table-condensed">
+          <thead style="background-color: black; color: white">
+            <tr>
+              <th>userId</th>  
+              <th>Title</th>
+              <th>ID</th>
+              <th>Completed</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+ 
+          </tbody>
+        </table>
+    </div>
+
+
+    <div class="container">
+
+        <form id="form-add" class="form-control-sm" style="display: none; width:50%; margin:auto">
+            <div class="form-group">
+                <label for="userID">User ID:</label>
+                <input type="number" name="" id="userID" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" name="" id="title" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="id">Id:</label>
+                <input type="number" name="" id="id" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="id">Completed:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="True">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    True
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="False" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    False
+                  </label>
+                </div>
+              </div>
+              
+            <div class="form-group">
+                <button type="submit" class="btn btn-danger btn-block">Add Data</button>
+            </div>
+        </form>
+
+
+
+        <form id="form-update" class="form-control-sm" style="display: none; width:50%; margin:auto">
+            <h2 class="text-center">Update Record</h2>
+            <div class="form-group">
+                <label for="userID">User ID:</label>
+                <input type="number" name="" id="userID" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" name="" id="title" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="id">Id:</label>
+                <input type="number" name="" id="id" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="id">Completed:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="True">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    True
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="False" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    False
+                  </label>
+                </div>
+              </div>
+              
+            <div class="form-group">
+                <button type="submit" class="btn btn-danger btn-block">Add Data</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
